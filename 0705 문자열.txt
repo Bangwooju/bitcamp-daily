@@ -1,0 +1,69 @@
+*문자열
+연속된 문자들의 모임
+문자열은 큰따옴표로 표현한다
+문자열의 끝에는 널문자 ('\0')를 함께 저장함
+
+문자열 상수
+값이 변경되지 않는 문자열
+-"A"나 헬로 월드 등
+-문자열 리터럴이라고 한다
+
+문자열 변수
+프로그램 수행 중에 변경될 수 있는 문자열
+-문자 배열
+
+선언하기
+문자 배열의 크기는 저장할 문자 수 +1 크기로 지정 = 널 공간 확보
+
+*초기화
+" " 문자를 대입연산자에 이용
+
+* Hello 저장하기
+1. 공간선언
+char a[6] = "Hello";
+
+*문자열 선언과 초기화 가능
+char a[10] = "Hello";
+char b[12] = "Hello World";
+char c[] = "Hello";
+
+*문자열 표준 입력
+scanf()
+입력된 문자열을 str배열에 저장
+공백 또는 enter 전까지 입력된 문자열을 저장
+함수 형식 : int scanf(%s",str);
+스트링엔 & 적지 않는다
+int a;
+scanf("%d",&a);
+
+*"Hello World"입력
+char str[15];
+scanf("%s", str);
+ㄴHello World 쓸때 중간에 공백이 들어가기 때문에 공백 이후는 널 값이 들어간다
+
+*gets()
+공백 포함한 문자열
+char* gets(char* str);
+enter를 \0으로 변환하여 저장
+
+char str[15];
+gets(str);
+ㄴ 공백포함 문자열을 입력한다
+
+
+*문자열 출력
+printf
+char a[] = "Hello";
+printf("%s",a);
+널문자를 만날 때 까지 문자열을 출력해주는 것이 printf의 %s
+
+puts()
+int puts(const char* str);
+str배열의 문자열을 표준 출력에 출력
+배열의 \0을 \n으로 변환하여 출력 = 자동으로 줄바꿈 된다는 뜻
+char str[] = "Hello World"; 
+puts(str);
+
+
+
+
